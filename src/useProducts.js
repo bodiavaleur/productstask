@@ -4,7 +4,7 @@ export function useProducts() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("https://json.extendsclass.com/bin/6de06b67fdc0")
+    fetch("https://cors-anywhere.herokuapp.com/https://jsonkeeper.com/b/C3E6")
       .then((res) => res.json())
       .then((data) => {
         // Split data into chunks for pagination
